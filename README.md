@@ -28,7 +28,7 @@ This notebook uses [Telco Customer Churn data from IBM Sample Datasets](https://
     
 
 
-* AML workspace can be configured with Private Endpoint and necessary DNS changes are made as documented [here](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-custom-dns?view=azureml-api-2&tabs=azure-cli). 
+* AML workspace can be configured with Private Endpoint with necessary DNS changes as documented [here](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-custom-dns?view=azureml-api-2&tabs=azure-cli). 
 
 
 ### Training using AutoML
