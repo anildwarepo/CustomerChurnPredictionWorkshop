@@ -21,7 +21,10 @@ This notebook uses [Telco Customer Churn data from IBM Sample Datasets](https://
     
             conda env create -f conda_env.yml
 
-* run git clone https://github.com/anildwarepo/CustomerChurnPredictionWorkshop.git from AML Compute Instance terminal or locally. 
+* Clone repo from AML Compute Instance terminal or locally. 
+        
+        git clone https://github.com/anildwarepo/CustomerChurnPredictionWorkshop.git
+
     
 
 
