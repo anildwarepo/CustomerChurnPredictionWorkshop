@@ -7,6 +7,8 @@ This repo guides users to create an Automl job using AML SDK V2. Once the AutoML
 This notebook uses [Telco Customer Churn data from IBM Sample Datasets](https://community.ibm.com/community/user/businessanalytics/blogs/steven-macko/2019/07/11/telco-customer-churn-1113).
 
 
+The registered model is then used to score a test dataset and calculate accuracy metrics. 
+
 ### Pre-requisites
 * Azure Machine Learning workspace provisioned.
 * Compute Cluster provisioned in the workspace.
