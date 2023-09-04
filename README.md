@@ -1,8 +1,37 @@
-az configure --defaults group=aml-rg workspace=aml-testws location=westus
-
-az ml data create --path ./data --name wa_telco_churn_data --version 0.1 --type mltable
+# Customer Churn Prediction using Azure Machine Learning Automl with Python SDK V2
 
 
-az ml data create --path ./bankmarketing_train.csv --name wa_telco_churn_data --version 0.1 --type mltable
+This repo guides users to create an Automl job using AML SDK V2. Once the AutoML job completes, the best performing model is registered in AML registry using MLFLow. 
 
-conda env create -n automlscoring --file .\conda_env_v_1_0_0.yml
+
+This notebook uses [Telco Customer Churn data from IBM Sample Datasets](https://community.ibm.com/community/user/businessanalytics/blogs/steven-macko/2019/07/11/telco-customer-churn-1113).
+
+
+### Pre-requisites
+* Azure Machine Learning workspace provisioned.
+* Compute Cluster provisioned in the workspace.
+* Training Cluster created. Recommend to create training cluster with 3 nodes with each Node have 2 vCPUs. This can reduce the AutoML training time. This notebook takes about 12 minutes to complete the training on a 3 node CPU cluster with Standard_DS11_v2 (2 cores, 14 GB RAM, 28 GB disk). 
+* Recommendation is to use AML compute instance to run the notebook.
+* The notebook can be run locally but will the following dependencies installed locally:
+ 
+    - python installed - python 3.8+
+    - conda installed
+    - Azure ML Python [SDK](https://learn.microsoft.com/en-us/python/api/overview/azure/ai-ml-readme?view=azure-python) and [CLI](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-configure-cli?view=azureml-api-2&tabs=public) v2 installed.
+    - Install additional dependencies in the conda_env.yml
+    
+            conda env create -f conda_env.yml
+
+    
+
+
+* AML workspace can be configured with Private Endpoint and necessary DNS changes are made as documented [here](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-custom-dns?view=azureml-api-2&tabs=azure-cli). 
+
+
+### Training using AutoML
+
+Use the automl_amlsdkv2_training.ipynb to kickoff a AutoML training job on AML.
+
+
+### Scoring
+
+use the automl_amlsdkv2_score_bestmodel.ipynb to run a scoring job on both local and compute cluster.
