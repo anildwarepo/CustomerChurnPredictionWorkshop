@@ -38,9 +38,9 @@ There are two ways with which one can accomplish Automl training and scoring in 
 1. Automated ML UI
 2. Jupyter Notebook or Cli using AML python SDK V2.
 
-- For Automate ML using UI please see [this](Designer.md)
+- For Automate ML using UI please see [this](Designer.md).
 
-- For notebook based Automl, please see [this](Notebook.md)
+- For notebook based Automl, please see [this](Notebook.md).
 
 
 
