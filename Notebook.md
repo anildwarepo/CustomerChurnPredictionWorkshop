@@ -5,7 +5,7 @@ Please see [this](https://learn.microsoft.com/en-us/azure/machine-learning/how-t
 
 ### Training using AutoML
 
-Use the automl_amlsdkv2_training.ipynb to kickoff a AutoML training job on AML.
+Use the automl_amlsdkv2_training.ipynb to kickoff an AutoML training job on AML.
 
 
 ### Scoring using local compute
