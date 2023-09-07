@@ -1,6 +1,6 @@
 ## Create and run machine learning pipelines using components with the Azure Machine Learning SDK v2
 
-Please see [this](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-create-component-pipeline-python?view=azureml-api-2) for more details.
+
 
 
 ### Training using AutoML
