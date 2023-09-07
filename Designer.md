@@ -128,7 +128,7 @@ Click on "View all properties in Azure Portal".  This will open the Azure Poral 
 
 ![Alt text](./assets/automlimage44.png)
 
-- Navigate to the azureml-blobstore-{{some-guid}} folder. Type the folder path in the search box. azureml/my_unique_folder_name/
+- Navigate to the azureml-blobstore-{{some-guid}} folder. Type the folder path in the search box. For e.g azureml/my_unique_folder_name/. This is the name of the folder path provided in the Designer page. 
 
 ![Alt text](./assets/automlimage45.png)
 
