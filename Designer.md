@@ -2,6 +2,8 @@
 
 In this section, we will use Automl UI to create a training job and AML Visual Designer to score using the best performaning model created by Automl. 
 
+Please see this for [more details](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-create-component-pipelines-ui?view=azureml-api-2).
+
 #### Create a Automl Training Job
 
 Make sure a compute cluster is provisioned. 
