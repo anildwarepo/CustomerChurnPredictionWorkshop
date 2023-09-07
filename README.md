@@ -33,7 +33,8 @@ This notebook uses [Telco Customer Churn data from IBM Sample Datasets](https://
 
 * Compute Cluster and Compute intances provisioned. 
 * Please review some of the AML concepts here. 
-[Data concepts in Azure Machine Learning](https://learn.microsoft.com/en-us/azure/machine-learning/concept-data?view=azureml-api-2)
+
+[Data concepts in Azure Machine Learning](https://learn.microsoft.com/en-us/azure/machine-learning/concept-data?view=azureml-api-2).
 
 
 
