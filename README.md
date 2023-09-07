@@ -32,6 +32,9 @@ This notebook uses [Telco Customer Churn data from IBM Sample Datasets](https://
 * AML workspace can be configured with Private Endpoint with necessary DNS changes as documented [here](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-custom-dns?view=azureml-api-2&tabs=azure-cli). 
 
 * Compute Cluster and Compute intances provisioned. 
+* Please review some of the AML concepts here. 
+[Data concepts in Azure Machine Learning](https://learn.microsoft.com/en-us/azure/machine-learning/concept-data?view=azureml-api-2)
+
 
 
 There are two ways with which one can accomplish Automl training and scoring in AML. 
