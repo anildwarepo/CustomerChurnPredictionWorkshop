@@ -1,0 +1,22 @@
+$schema: https://azuremlschemas.azureedge.net/latest/commandComponent.schema.json
+name: wa_telco_customer_churn_score
+# version: 1b
+display_name: Score
+type: command
+inputs:
+  input_data:
+    type: uri_folder
+  input_model:
+    type: uri_folder
+outputs:
+  output_folder:
+    type: uri_folder
+  output_filename:
+    type: string
+environment: azureml:AzureML-AutoML:142
+code: ./score_src
+command: >-
+  python score.py 
+  --input_data ${{inputs.input_data}} 
+  --input_model ${{inputs.input_model}}
+  --output_folder ${{outputs.output_folder}}

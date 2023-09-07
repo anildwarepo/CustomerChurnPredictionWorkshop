@@ -1,5 +1,5 @@
 paths:
-- file: WA_Fn-UseC_-Telco-Customer-Churn.csv
+- file: WA_Fn-UseC_-Telco-Customer-Churn_Train.csv
 transformations:
 - read_delimited:
     delimiter: ','
