@@ -63,9 +63,9 @@ This notebook uses [Telco Customer Churn data from IBM Sample Datasets](https://
 There are two ways with which one can accomplish Automl training and scoring in AML. 
 1. Automated ML UI.  [Please see this for more details.](https://learn.microsoft.com/en-us/azure/machine-learning/concept-designer?view=azureml-api-2).
 
-2. Jupyter Notebook or Cli using AML python SDK V2.
-
 - For Automate ML using UI please see [this](Designer.md).
+
+2. Jupyter Notebook or Cli using AML python SDK V2.
 
 - For notebook based Automl, please see [this](Notebook.md).
 
