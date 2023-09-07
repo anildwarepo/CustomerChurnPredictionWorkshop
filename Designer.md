@@ -1,14 +1,14 @@
-### Automl and Scoring with UI
+## Automl and Scoring with UI
 
 In this section, we will use Automl UI to create a training job and AML Visual Designer to score using the best performaning model created by Automl. 
 
 Please see this for [more details](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-create-component-pipelines-ui?view=azureml-api-2).
 
-#### Create a Automl Training Job
+### Create a Automl Training Job
 
 Make sure a compute cluster is provisioned. 
 
-##### Please follow the steps to configure and submit an Automl Training Job.
+#### Please follow the steps to configure and submit an Automl Training Job.
 - Navigate to https://ml.azure.com and login with you credentials. 
 - Select the workspace and navigate to Automated ML tab. 
 ![Automl Tab](./assets/automlimage1.png)
@@ -62,9 +62,9 @@ Click Next.
 ![Alt text](./assets/automlimage20.png)
 
 
-#### Using Visual Designer to Score using the best performing model. 
+### Using Visual Designer to Score using the best performing model. 
 
-##### Prerequisites
+#### Prerequisites
 - Navigate to Components pane in AML. 
 ![Alt text](./assets/automlimage21.png)
 - Click on New Component and select Folder in the Upload Component page. 
@@ -74,7 +74,7 @@ Click Next.
 - Click Next to create the component
 ![Alt text](./assets/automlimage24.png)
 
-##### Create scoring job using Visual Designer. 
+#### Create scoring job using Visual Designer. 
 
 - Navigate to Designer pane in AML and select Custom tab.
 ![Alt text](./assets/automlimage25.png)
