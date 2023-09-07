@@ -60,6 +60,8 @@ This notebook uses [Telco Customer Churn data from IBM Sample Datasets](https://
 
 [Create and run machine learning pipelines using components with the Azure Machine Learning studio](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-create-component-pipelines-ui?view=azureml-api-2).
 
+[Compute Targets](https://learn.microsoft.com/en-us/azure/machine-learning/concept-compute-target?view=azureml-api-2).
+
 There are two ways with which one can accomplish Automl training and scoring in AML. 
 1. Automated ML UI.  [Please see this for more details.](https://learn.microsoft.com/en-us/azure/machine-learning/concept-designer?view=azureml-api-2).
 
