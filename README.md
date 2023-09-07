@@ -7,7 +7,7 @@ In today's highly competitive business landscape, retaining customers is paramou
 
 Azure Machine Learning, Microsoft's cloud-based machine learning platform, offers an array of tools and services to empower data scientists and developers in building and deploying machine learning models with ease. One of its standout features is Automated Machine Learning (AutoML), which simplifies the end-to-end machine learning process, from data preparation and feature engineering to model selection and deployment.
 
-In this tutorial, we will explore the capabilities of Azure Machine Learning's Automated ML using the Telco Customer Churn sample dataset. The Telco Customer Churn dataset is a classic example in the field of customer churn prediction, comprising various features related to customer demographics, services subscribed, contract details, and the ultimate churn status. Leveraging this dataset within the Azure Machine Learning environment, we will showcase how AutoML can help streamline the model development process, leading to more accurate and efficient predictions of customer churn.
+In this workshop, we will explore the capabilities of Azure Machine Learning's Automated ML using the Telco Customer Churn sample dataset. The Telco Customer Churn dataset is a classic example in the field of customer churn prediction, comprising various features related to customer demographics, services subscribed, contract details, and the ultimate churn status. Leveraging this dataset within the Azure Machine Learning environment, we will showcase how AutoML can help streamline the model development process, leading to more accurate and efficient predictions of customer churn.
 
 Key Takeaways:
 
