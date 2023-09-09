@@ -37,6 +37,8 @@ This notebook uses [Telco Customer Churn data from IBM Sample Datasets](https://
 * AML workspace can be configured with Private Endpoint with necessary DNS changes as documented [here](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-custom-dns?view=azureml-api-2&tabs=azure-cli). 
 
 * Compute Cluster and Compute intances provisioned. 
+* VS Code with Python and Jupyter extensions installed. Or a Jupyter environment which can host notebooks. 
+
 
 ### Please review some of the AML concepts here. 
 
