@@ -27,9 +27,48 @@ Through this exploration of Azure Machine Learning Automated ML and the Telco Cu
 This notebook uses [Telco Customer Churn data from IBM Sample Datasets](https://community.ibm.com/community/user/businessanalytics/blogs/steven-macko/2019/07/11/telco-customer-churn-1113).
 
 
+### In the real world
+In the real-world scenario described, we are addressing the challenge of customer churn prediction using machine learning. Customer churn refers to the phenomenon where customers stop using a product or service offered by a company. Predicting customer churn is crucial for businesses as it allows them to proactively take actions to retain customers and maintain profitability. Here, we'll elaborate on the process using proper machine learning terminology and discuss the real-world challenges involved:
+
+1. **Data Collection**:
+   - Historical Data: To build a churn prediction model, we start by gathering historical data. This data contains information about past customers who have churned. It typically includes features such as customer demographics, usage patterns, purchase history, and the churn label (whether they churned or not).
+   - Current Data: Additionally, we collect data from the current set of customers. This data will include features similar to the historical data but will not have churn labels.
+
+2. **Data Preprocessing**:
+   - Data Cleansing: The collected data is often messy, containing missing values, incorrect entries, and duplicates. Data cleansing involves identifying and rectifying these issues to ensure the dataset's quality.
+   - Feature Engineering: Feature engineering is the process of creating new informative features or transforming existing ones to improve the model's predictive power. For example, calculating customer tenure or creating customer segments.
+
+3. **Data Splitting**:
+   - The cleansed historical data is divided into two parts: a training dataset and a validation dataset. The training dataset is used to train the machine learning model, while the validation dataset is used to assess the model's performance during training.
+
+4. **Machine Learning Model Selection**:
+   - Automated Machine Learning (AutoML) tools are employed to automate the process of selecting the most suitable machine learning algorithm and hyperparameters. AutoML helps save time and resources in model development.
+
+5. **Model Training**:
+   - The selected machine learning model is trained using the historical data. The model learns to recognize patterns that lead to churn based on the provided features.
+
+6. **Model Evaluation**:
+   - The model's performance is evaluated on the validation dataset using metrics such as accuracy, precision, recall, F1-score, and ROC AUC. This step helps assess how well the model generalizes to unseen data.
+
+7. **Deployment**:
+   - Once the model is satisfactory, it is deployed into the production environment. This allows it to make predictions on the current set of customers.
+
+8. **Continuous Monitoring and Updating**:
+   - The training dataset can be periodically updated with new churn data or changes in customer behavior. This ensures that the model remains relevant and accurate over time.
+   - Regular updates to the model are necessary to adapt to shifts in customer behavior, market conditions, and other external factors.
+
+Real-World Challenges:
+- **Data Quality**: Ensuring the quality of historical and current data is a significant challenge. Cleaning and preprocessing the data can be time-consuming and require domain expertise.
+- **Imbalanced Data**: Churn data is often imbalanced, with a majority of customers not churning. This can lead to model bias, and specialized techniques like oversampling or undersampling may be needed.
+- **Model Interpretability**: Understanding why the model makes certain predictions is crucial for taking appropriate actions to prevent churn.
+- **Scalability**: Handling large datasets and maintaining model performance as the dataset grows can be challenging.
+- **Model Maintenance**: Continuously updating and retraining the model to reflect changing customer behavior and business conditions requires a well-defined process.
+
+In summary, predicting customer churn using machine learning involves a series of steps, from data collection and preprocessing to model training and deployment. Addressing real-world challenges is essential to build an effective churn prediction system that helps businesses retain valuable customers and improve their bottom line.
 
 
-### Pre-requisites
+
+### Pre-requisites for the Customer Churn workshop
 * Azure Machine Learning workspace provisioned.
 * Compute Cluster provisioned in the workspace.
 * Training Cluster created. Recommend to create training cluster with 3 nodes with each Node have 2 vCPUs. This can reduce the AutoML training time. This notebook takes about 12 minutes to complete the training on a 3 node CPU cluster with Standard_DS11_v2 (2 cores, 14 GB RAM, 28 GB disk). 
