@@ -6,6 +6,6 @@ model: azureml:wa_telco_customer_churn_model_best:3
 code_configuration:
   code: ./
   scoring_script: score.py
-environment: azureml:AzureML-AutoML:142
+environment: azureml:automl_env:1
 instance_type: Standard_DS1_v2
 instance_count: 1
