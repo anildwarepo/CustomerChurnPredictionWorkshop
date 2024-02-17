@@ -1,5 +1,5 @@
 $schema: https://azuremlschemas.azureedge.net/latest/managedOnlineDeployment.schema.json
-name: green
+name: blue
 endpoint_name: wa-customer-churn-prediction2 #setup replace `mlops-workshop-endpoint` with your own endpoint name defined in endpoint.yml
 #egress_public_network_access: disabled # not required for managed vnet
 model: azureml:wa_telco_customer_churn_model_best:1
@@ -9,3 +9,4 @@ code_configuration:
 environment: azureml:automl:1
 instance_type: Standard_DS1_v2
 instance_count: 1
+app_insights_enabled: true
