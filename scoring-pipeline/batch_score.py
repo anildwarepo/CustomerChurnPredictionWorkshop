@@ -17,7 +17,8 @@ def init():
 def run(raw_data):
     try:
         # Get the input data 
-        data=pd.DataFrame(json.loads(raw_data)['data'])
+        #data=pd.DataFrame(json.loads(raw_data)['data'])
+        data=raw_data
         data["Partner"] = data["Partner"].map({"Yes": True, "No": False})
         data["Dependents"] = data["Dependents"].map({"Yes": True, "No": False})
         data["PhoneService"] = data["PhoneService"].map({"Yes": True, "No": False})
@@ -29,4 +30,4 @@ def run(raw_data):
         return data
     except Exception as e:
         error= str(e)
-        return error
+        return f"anildwa error: {error}"

@@ -1,3 +1,5 @@
 /artifact_downloads
 /wa_telco_customer_churn_test_data_uri_file
 /wa_telco_customer_churn_train_data
+DEPLOY.md
+test_ml_endpoint.py
