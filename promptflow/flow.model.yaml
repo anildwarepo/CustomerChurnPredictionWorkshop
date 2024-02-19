@@ -1,0 +1,15 @@
+$schema: https://azuremlschemas.azureedge.net/latest/model.schema.json
+name: basic-chat-model
+path: ./Bring-Your-Own-Data-Chat-QnA
+description: register basic chat flow folder as a custom model
+properties:
+  # In AuzreML studio UI, endpoint detail UI Test tab needs this property to know it's from prompt flow
+  azureml.promptflow.source_flow_id: Bring-Your-Own-Data-Chat-QnA
+  
+  # Following are properties only for chat flow 
+  # endpoint detail UI Test tab needs this property to know it's a chat flow
+  azureml.promptflow.mode: chat
+  # endpoint detail UI Test tab needs this property to know which is the input column for chat flow
+  azureml.promptflow.chat_input: chat_input2
+  # endpoint detail UI Test tab needs this property to know which is the output column for chat flow
+  azureml.promptflow.chat_output: chat_output
