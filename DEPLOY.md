@@ -13,6 +13,14 @@ az ml online-endpoint update --name wa-customer-churn-prediction2 --traffic "blu
 
 az ml online-endpoint update --name wa-customer-churn-prediction2 --traffic "blue=90 green=10" -g aml-rg --workspace-name aml-northcentral
 
+
+az ml model create --file flow.model.yaml -g aml-rg --workspace-name aml-northcentral
+
+
+az ml online-endpoint create --file flow-endpoint.yml -g aml-rg --workspace-name aml-northcentral
+
+az ml online-deployment create --file flow-deployment.yml -g aml-rg --workspace-name aml-northcentral
+
 sudo apt-get install apache2-utils
 
 
